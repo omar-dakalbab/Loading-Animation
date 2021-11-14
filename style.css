@@ -1,0 +1,80 @@
+body{
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    overflow-y: scroll;
+    color: #777;
+    background-color: #7303C0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin: 0;
+    padding: 10px 0;
+    color: #777;
+}
+
+.load-wrapper{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 10px 0;
+    padding: 20px 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.load-wrapper p{
+    padding: 0 0 20px;
+}
+
+.ring{
+   position: relative;
+   width: 45px;
+   height: 45px;
+   margin: 0 auto;
+   border: 4px solid #B25BC8;
+   border-radius: 100%;
+}
+
+.ball-holder{
+    position: absolute;
+    width: 12px;
+    height: 45px;
+    left: 17px;
+    top: 0px;
+}
+.ball{
+    position: absolute;
+    top: -11px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background: linear-gradient(136.85deg, #03001E 0%, #7303C0 100%);
+}
+
+.load .ball-holder{
+    animation: loading 1.3s linear infinite;
+}
+.l-5{
+    animation-delay: 0.96s;
+}
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
